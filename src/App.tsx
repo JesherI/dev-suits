@@ -1,9 +1,15 @@
-export default function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+
+const App: React.FC = () => {
   return (
-    <>
-    <div className="App">
-      <h1 className="font-extrabold text-red-500">Welcome to DEV-SUITS</h1>
-    </div>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Aquí irán más rutas de otras páginas */}
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
