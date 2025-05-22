@@ -1,9 +1,10 @@
-export default function App() {
-  return (
-    <>
-    <div className="App">
-      <h1 className="font-extrabold text-red-500">Welcome to DEV-SUITS</h1>
-    </div>
-    </>
-  )
-}
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import AppRouter from './router.tsx'
+import './index.css'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <AppRouter />
+  </StrictMode>,
+)
