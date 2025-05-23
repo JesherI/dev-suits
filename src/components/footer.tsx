@@ -1,8 +1,10 @@
 import React from "react";
 
 const Footer: React.FC = () => (
-    <footer className="text-black" style={{ textAlign: "center", padding: "1rem", background: "#f1f1f1" }}>
-        <p>&copy; {new Date().getFullYear()} Dev Suits. All rights reserved.</p>
+    <footer className="bg-zinc-900 border-t border-zinc-700 py-6 text-center text-white/70 text-sm tracking-wide">
+        <p>
+            &copy; {new Date().getFullYear()} <span className="text-yellow-400 font-semibold">Dev Suits</span>. All rights reserved.
+        </p>
     </footer>
 );
 
