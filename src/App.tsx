@@ -1,15 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import AppRouter from './router.tsx'
+import './index.css'
 
-const App: React.FC = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* Aquí irán más rutas de otras páginas */}
-      </Routes>
-    </Router>
-  );
-};
-
-export default App;
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <AppRouter />
+  </StrictMode>,
+)
