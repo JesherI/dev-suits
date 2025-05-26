@@ -6,7 +6,7 @@ import whatsappIcon from '../views/images/whatsapp.png';
 const Contacts: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row min-h-screen font-sans">
-      <div className="bg-y bg-green-300 w-full md:w-1/2 p-10">
+      <div className="bg-y bg-gray-200 w-full md:w-1/2 p-10">
         <h2 className="text-2xl font-bold mb-6">Contáctanos</h2>
         <form className="space-y-4">
           <div>
