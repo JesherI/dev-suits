@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import "./home.css";
-
 const Home = () => {
   const [text, setText] = useState("");
   const fullText = "BIENVENIDO A DEV-SUITS";
